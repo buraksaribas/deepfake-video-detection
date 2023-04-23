@@ -1,6 +1,4 @@
-clc
-clear all
-close all
+clc;clear;close all;
 
 datafolder = "C:\Users\Burak\Desktop\matlab\deepfake_video_detection\dataset";
 train_sample_folder = "train_sample_videos";
