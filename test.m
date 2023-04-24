@@ -28,15 +28,15 @@ for i = 1:numel(test_samples)
     end
 end
 
-% T = struct2table(test_videos_predict);
-% writetable(T,"custom_model.csv")
+T = struct2table(test_videos_predict);
+writetable(T,"alexnet.csv");
 
 
-for i = 1:numel(test_frames)
-    subplot(4,3,i)
-    [label, probability] = classify(net, test_frames{i});
-    imshow(test_frames{i});
-    title(string(label) + ", " + num2str(100*max(probability(1, :)),3) +"%");
-end
+% for i = 1:numel(test_frames)
+%     subplot(4,3,i)
+%     [label, probability] = classify(net, test_frames{i});
+%     imshow(test_frames{i});
+%     title(string(label) + ", " + num2str(100*max(probability(1, :)),3) +"%");
+% end
 
 
