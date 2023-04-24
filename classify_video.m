@@ -1,6 +1,8 @@
-vid = VideoReader(fullfile(fullfile(datafolder, train_sample_folder),"abarnvbtwb.mp4"));
+test_samples = dir(fullfile(fullfile(datafolder, test_folder), "*.mp4"));
+
+vid = VideoReader(fullfile(fullfile(datafolder, test_folder), test_samples(1).name));
 detector = mtcnn.Detector();
-loaded_network = load('deepfake_squeezenet.mat');
+loaded_network = load('alexnet.mat');
 net = loaded_network.net;
 
 while hasFrame(vid)

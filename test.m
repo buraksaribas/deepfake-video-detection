@@ -1,4 +1,4 @@
-loaded_network = load('all_deepfake_squeezenet.mat');
+loaded_network = load('alexnet.mat');
 net = loaded_network.net;
 datafolder = "C:\Users\Burak\Desktop\matlab\deepfake_video_detection\dataset";
 test_folder = "test_videos";

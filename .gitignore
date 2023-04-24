@@ -6,4 +6,6 @@ frames3
 frames10
 model.m
 model_test.m
+trash_models
+alexnet.mat
 *.mat
